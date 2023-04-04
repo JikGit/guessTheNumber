@@ -45,7 +45,7 @@ const numeroIndovinato = () => {
 const addTriedNumber = (listElm, value) => {
 	let listChildElm = document.createElement("li");	
 	listChildElm.innerHTML = value;
-	listElm.appendChild(listElm);
+	listElm.appendChild(listChildElm);
 }
 
 //quando clicco il bottone per impostare il range dei numeri
