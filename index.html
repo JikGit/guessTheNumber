@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="main.css">
+		<!-- fontAwesome -->
+		<script src="https://kit.fontawesome.com/99e48f3be3.js" crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<h1 id="pageTitle"> Indovina il Numero </h1>
+		
+		<!-- input min and max n -->
+		<form id="formRangeN">
+			<div class="inputDiv">
+				<label for="inputNMax"> Min </label>
+				<input id="inputNMax" name="inputNMax" type="text" placeholder="Definisci n. Min"/>
+			</div>
+			<div class="inputDiv">
+				<label for="inputNMin"> Max </label>
+				<input id="inputNMin" name="inputNMin" type="text" placeholder="Definisci n. Max"/>
+			</div>
+			<div class="buttonIcon">
+				<i class="fa-solid fa-check"></i>
+			</div>
+		</form>	
+
+
+		<!-- input guessed number -->
+		<form id="formGuessedN">
+			<input id="inputGuessedN" name="inputGuessedN" type="text" placeholder="Inserisci n.">			
+		</form>
+	
+		<!-- gradient bar -->
+		<div id="gradientBar">
+			<h1 id="vittoria" class="hide">Numero indovinato</h1>
+			<div class="tag bottom"> </div>
+			<div id="containerCenterTag">
+				<div id="centerTag" class="tag up"></div>
+				<p>Centro</p>
+			</div>
+		</div>
+
+		<!-- numeri provati -->
+		<div id="triedNumber">	
+			<p>Numeri provati</p>
+			<ol>
+			</ol>
+		</div>
+
+		
+		<script src="main.js"></script>
+	</body>
+</html>
